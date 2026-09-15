@@ -1,0 +1,77 @@
+/* Reset básico y fondo */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Estilos del Menú de Navegación */
+.menu {
+  background-color: #282c34;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu li {
+  display: inline;
+}
+
+/* Estilos de los enlaces (NavLink) */
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+/* El NavLink le agrega automáticamente una clase 'active' al enlace clickeado */
+.menu a.active {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+/* Contenedor de las páginas */
+.contenedor-principal {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Estilos compartidos de cada página */
+.pagina {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.pagina h1 {
+  color: #282c34;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.error h1 {
+  color: #d9534f;
+  border-bottom-color: #d9534f;
+}
