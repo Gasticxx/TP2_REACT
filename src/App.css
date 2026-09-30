@@ -75,3 +75,68 @@ body {
   color: #d9534f;
   border-bottom-color: #d9534f;
 }
+
+/* --- Estilos del Formulario --- */
+.formulario-estilizado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.grupo-input label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.grupo-input input, 
+.grupo-input textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+}
+
+.mensaje-error {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.btn-enviar {
+  background-color: #282c34;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+.btn-enviar:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}

@@ -1,12 +1,13 @@
 import React from 'react';
+import FormularioContacto from '../components/FormularioContacto';
 
 function Contacto() {
     return (
         <div className="pagina">
-        <h1>Contacto</h1>
-        <p><strong>Creador del sitio:</strong> GASTON EXEQUIEL LOPEZ</p>
-        <p><strong>Email:</strong> gaslopez106@gmail.com</p>
-        <p>¡Estoy disponible para futuros proyectos!</p>
+            <h1>Contacto</h1>
+            <p> Para contactarme, por favor completa el siguiente formulario.Te tratare de responder a la brevedad.</p>
+            {/* Aquí llamamos al componente extra que acabamos de crear */}
+            <FormularioContacto />  
         </div>
     );
 }
